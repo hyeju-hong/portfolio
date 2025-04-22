@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emons</title>
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap" data-scroll-container>
+        <header id="header">
+            <h1><a href="#"><span class="material-symbols-outlined">
+                bed
+                </span>Emons</a></h1>
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">기업소개</a>
+                        <ul>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">경영철학</a></li>
+                            <li><a href="#">About 에몬스</a></li>
+                            <li><a href="#">CI/BI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드 스토리</a>
+                        <ul>
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">광고</a></li>
+                            <li><a href="#">PR</a></li>
+                            <li><a href="#">장학회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Photo Review</a>
+                        <ul>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">전체</a></li>
+                            <!-- <li><a href="#">Responsive</a></li>
+                            <li><a href="#">Event &AMP; Effect</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul>
+                            <li><a href="#">고객지원 안내</a></li>
+                            <li><a href="#">AS신청</a></li>
+                            <li><a href="#">서비스</a></li>
+                            <li><a href="#">간편문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><strong>KOR</strong><span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span></p>
+                    <ul>
+                        <li><a href="#"><strong>ENG</strong></a></li>
+                        <li><a href="#"><strong>JPN</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="custom_cursor "></div>
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide main1"><a href="#">
+                                <div class="tit">
+                                    <p>친환경 에몬스</p>
+                                    <h2>다시 자연으로 <span>친환경 철학</span></h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main2"><a href="#">
+                                <div class="tit">
+                                    <p>품질 에몬스</p>
+                                    <h2>40여년의 <span>기술력과 노하우</span></h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main3"><a href="#">
+                                <div class="tit">
+                                    <p>디자인 에몬스</p>
+                                    <h2>실용을 넘어 <span>공간의 새로운
+                                        가치<span> </h2>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div><!-- //.main_slide_wrap -->
+    
+                <!-- 커스텀 페이지네이션 -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num"><span class="swiper-pagination-current">01</span> / 03</div>
+    
+                    <!-- 중앙 세로라인(진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+    
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <span class="prev">▲</span>
+                        <span class="next">▼</span>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit"><span>자연 친화적</span>생활 공간을 <span>창조</span>해<br> 
+                        고객의 <span>삶의 질</span>을<span>높이고,</span></strong>
+                    <b class="tit">  <span>소비자</span>의 <span>생활문화</span>를</b>
+                    <em class="tit">이끄는 <span>기업</span>입니다.</em>
+                </h2>
+            </section>
+    
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">Emons</div>
+                        <ul class='list'>
+                            <li>
+                                최고의 제품과 최상의 서비스로 고객의 주거문화에 기여하겠습니다.
+                            </li>
+                            <li>
+                                구성원의 꿈과 이상을 소중히 하는 일류기업이 되겠습니다.
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">Corporate Philosophy</h2>
+                        <p>최고의 제품과 최상의 서비스로 고객의 주거문화에 기여하며,<br>
+                            구성원의 꿈과 이상을 소중히 하는 일류기업
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>미래형 디자인 창조</h3>
+                                    <p>연구 개발에 힘쓰며 <br>가구문화의 트랜드를 선도합니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>제일주의 추구</h3>
+                                    <p>우수한 제품과 서비스를 제공하여<br>고객의 삶을 풍요롭게 하겠습니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>자연을 생각하는 기업</h3>
+                                    <p>언제나 환경을 보호하고 살아갈 수 있도록<br> 노력하는 기업으로 성장하겠습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">vision</div>
+                        <ul class='list'>
+                            <li>
+                                사용자의 경험을 한층 더 가치 있게 만들기 위해, 디테일에 집중한 저의 vision을 소개합니다.
+                            </li>
+                            <li>
+                                사용자의 경험을 한층 더 가치 있게 만들기 위해, 디테일에 집중한 저의 vision을 소개합니다.
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="s_tit">
+                        <h2 class="">our value & vision</h2>
+                        <p>스페셜 작품들을 한눈에<br>
+                            여러분의 다양한 라이프 스타일 디자인을 추구합니다.
+                        </p>
+                    </div>
+    
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front">앞</div>
+                                <div class="back">뒤</div>
+                            </li>
+                            <li class="card">
+                                <div class="front">앞</div>
+                                <div class="back">뒤</div>
+                            </li>
+                            <li class="card">
+                                <div class="front">앞</div>
+                                <div class="back">뒤</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
+            <section class="special_product" >
+                <div class="s_tit">
+                    <h2 class="">Photo Review</h2>
+                    <p>즐거운 우리집<br>
+                        에몬스로 새로워진 우리집을 소개합니다.
+                    </p>
+                </div><!-- //.s_tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/re1.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>론도식탁 최고에요</strong>
+                            <p>매장가서 직접 실물 보고 구매한 콘도 식탁 의자 정말 만족합니다!</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/re2.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>에몬스 소파 구입후기</strong>
+                            <p>스윙소파라 넓고 편하게 이용 할 수 있어요.</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/re7.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>휴고 거실장 구입!</strong>
+                            <p>깔끔하고 이쁜 색으로 거실장을 구입했어요. 고급스러워서 마음에 듭니다.</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/re4.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>이사하면서 침대바꿨어요</strong>
+                            <p>앉아보고 바로 선택한 침대입니다. 편하고 너무 이쁘네요</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/re5.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>에몬스 붙박이장 구매했어요!</strong>
+                            <p>가구 브랜드가 많아서 고민중이었는데 주변에서 에몬스가구를 많이 추천해서 구입했습니다</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/re3.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>신혼 혼수가구로 최고에요</strong>
+                            <p>혼수로 구입한 가구 중에서 제일 마음에 듭니다. 추천해요!</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/re6.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>엘르 식탁으로 구매해봤습니다</strong>
+                            <p>이뻐서 나오자마자 구매해야겠다고 생각했어요 역시 실물도 이쁘네요</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/desk1.jpg" alt="desk"></div>
+                        <div class="name">
+                            <strong>에몬스 아이들 책상</strong>
+                            <p>아이가 초등학교 들어가는 기념으로 방에 책상을 사줬습니다 너무 이쁘네요</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="business">
+                <div class="s_tit">
+                    <h2>Brand 소개</h2>
+                    <p>마음까지 편안한 온전한 휴식,<br>
+                        에몬스를 만나면 당신의 일상이 됩니다.</p>
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+    
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/design_new.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo_new.png" alt="에몬스로고">
+                                    <span>Design</span>
+                                    <h3>공간의 완성은<br>가구에서부터 시작됩니다.</h3>
+                                    <p>어떠한 공간에서도 변함없는 고유의 표정을 가진 가구</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#오브제무드</li>
+                                            <li>#형태의 미학</li>
+                                            <li>#FormArt</li>
+                                            <li>#Eleganz</li>
+                                            <li>#내추럴 무드</li>
+                                            <li>#SilentLux</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/natural_new.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo_new.png" alt="에몬스로고">
+                                    <span>Green Feeling</span>
+                                    <h3>사람과<br>자연을 향합니다.</h3>
+                                    <p>자연을 통해 공간을 창조하고 다시 자연으로 되돌리는 것</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#EcoForm</li>
+                                            <li>#살아있는 공간</li>
+                                            <li>#Naturalon</li>
+                                            <li>#사람과 자연</li>
+                                            <li>#Green Mood</li>
+                                            <li>#숨쉬는 공간</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/p_new.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo_new.png" alt="에몬스로고">
+                                    <span>Quality</span>
+                                    <h3>에몬스만의<br>노하우로</h3>
+                                    <p>원칙을 지켜온 명장정신과 40여년 축적된 기술력</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#명장정신</li>
+                                            <li>#40Years</li>
+                                            <li>#디테일의 차이</li>
+                                            <li>#ArtMaster</li>
+                                            <li>#에몬스품질</li>
+                                            <li>#EliteCraft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/life_new.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo_new.png" alt="에몬스로고">
+                                    <span>Life</span>
+                                    <h3>당신의 일상이<br>달라집니다.</h3>
+                                    <p>즐거움이 가득한 공간, 마음까지 편안하게 쉴수 있는 공간</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#편안한 공간</li>
+                                            <li>#LifeMood</li>
+                                            <li>#쉼의 미학</li>
+                                            <li>#SoftLiving</li>
+                                            <li>#공간의 온기</li>
+                                            <li>#InnerPeace</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b5.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo5.png" alt="프로젝트 서브로고">
+                                    <span>Portfolio Project</span>
+                                    <h3>나만의 포트폴리오를 위한<br>디자인 실습</h3>
+                                    <p>학습한 내용을 바탕으로 실제 프로젝트를 기획하고 완성한 결과물입니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#포트폴리오</li>
+                                            <li>#자기소개서</li>
+                                            <li>#디자인실습</li>
+                                            <li>#Figma</li>
+                                            <li>#UIUX실전</li>
+                                            <li>#성과발표</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+            
+
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">EveryWhere<br> Every Moments, Emons</h2>
+                    <p>집으로 가는길이 설렘으로 가득하고,<br>
+                        즐거운 이야기와 추억을 만들고 쌓아가는 공간</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="img/emons_2024_CF_15second.mp4" loop autoplay muted playsinline></video>
+                </figure>
+            </section>
+
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>Emons Business Area</h2>
+                    <p>다양한 분야에서 에몬스를 만나보세요.</p>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="#">
+                                <h3>Emons Main</h3>
+                                <p>에몬스는 우수한 품질의 프리미엄 가구 브랜드로, 장롱, 침대, 소파,
+                                    식탁, 거실가구,<br> 서재, 학생가구등의 제품을 전국 대리점 및 직영점에서
+                                    직접 만나 볼 수 있습니다.</p>
+                            </a></li>
+                        <li class="sl2"><a href="#">
+                                <h3>EMONS OFFICE</h3>
+                                <p>일반사무실 부터 공공기관, 학교, 기숙사, 병원, 연수원, 도서관,
+                                    클럽하우스 등<br> 문화레저 시설에 이르기까지 오랜역사와 기술력을
+                                    바탕으로 공간을 연출합니다.</p>
+                            </a></li>
+                        <li class="sl3"><a href="#">
+                                <h3>Emons Business</h3>
+                                <p>아파트, 오피스텔 등 대형 주거시설과 공공기관, 연수원, 콘도,
+                                    리조트 등 다양한<br> 문화시설에 이르기까지 다양한 삶의 공간에 최고의
+                                    제품을 공급합니다.</p>
+                            </a></li>
+                    </ul>
+                </div>
+         </section>
+
+         <section class="news">
+            <div class="s_tit">
+                <h2>Curation</h2>
+                <p>가치 있는 것들을 선별해서,<br> 하나의 스토리로</p>
+                <a href="#" class="more">View More &gt;</a>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="con swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/bed_new.png" alt="bad"></div>
+                            <p class="txt">
+                                호텔 같은 침실을 만들어주는 에몬스 침대
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/sofa_new1.png" alt="sofa"></div>
+                            <p class="txt">
+                                신혼부부가 알려주는 신혼집 소파 추천
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/table_new.png" alt="table"></div>
+                            <p class="txt">
+                                아빠의 주방을 만드는 에몬스 식탁
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/tea_new.png" alt="teatable"></div>
+                            <p class="txt">
+                                차 한잔의 여유를 즐길 수 있는 티테이블 추천
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/pet_new.png" alt="pet"></div>
+                            <p class="txt">
+                                우리집 멍냥이도 뛰어 놀 수 있는 펫프랜들리 소파
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/guest_new.png" alt="guest"></div>
+                            <p class="txt">
+                                집들이 손님들도 탐내는 에몬스 식탁
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/mom_new.png" alt="momsofa"></div>
+                            <p class="txt">
+                                고단한 엄마에게 휴식을 선물하세요
+                            </p>
+                        </a>
+                    </li>
+                    <!-- <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t8.png" alt=""></div>
+                            <p class="txt">
+                                디자인 도구 완전 정복: Figma, Adobe XD, chatgpt
+                            </p>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+         </section>
+
+
+
+        </main>
+        <footer>
+            <h3>40여년의 오랜철학</h3>
+            <p>트렌디한 디자인, 견고한 품질, 친환경의 좋은가구<br>
+                Emons <span>가구에 </span>진심<span>을 담다.</span></p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

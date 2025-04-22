@@ -1,0 +1,219 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Eczar:wght@400..800&family=Mingzat&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: "jsMath-cmbx10";
+    src: url(../font/jsMath-cmbx10.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Microsoft Uighur";
+    src: url(../font/microsoft-uighur.woff);
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+
+}
+
+:root {
+    font-size: 20px;
+    /* --header-height: 90px; */
+    --white-color: #fff;
+    --main-color: #5C0202;
+    --main-gray: #F4F3F3;
+    --main-orange: #91601B;
+    --txt-purple: #5C0238;
+    --back-beep-purple: #48012C;
+    --back-purple: #715663;
+    --tag-gray: #E9E9E9;
+    --list-small-gray: #777777;
+    --list-back-gray: #DCDCDC;
+    --list-main-gray: #F5F0F0;
+    --intro-o: #785B33;
+    --main-font: "Microsoft Uighur";
+    --font-Mukta: "Mukta", sans-serif;
+    --font-jsMath-cmbx10: "jsMath-cmbx10";
+    --font-Eczar: "Eczar", serif;
+    --font-Akatab: "Akatab", sans-serif;
+    --font-Mingzat: "Mingzat", sans-serif;
+}
+
+body {
+    font-family: "Microsoft Uighur", "Mukta", "jsMath-cmbx10", "Eczar", "Akatab", "Mingzat", ;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.inner {
+    width: 1672px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 188px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    /* background: #ccc; */
+}
+header .inner{
+    position: relative;
+    padding-top: 48px;
+}
+header .inner .line_bg{
+    width: 0;
+    height: 4px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0; top: 46px;
+    z-index: 10;
+}
+header .line {
+    width: 1000px;
+    height: 105px;
+    border-top: 1px solid #000;
+    display: flex;
+    padding: 0px 0px 11px 0px;
+    align-items: flex-start;
+    gap: 11px;
+/*     margin-top: 50px;
+    margin-bottom: 50px; */
+
+}
+header .line.on {
+    border-top: 2px solid var(--main-color);
+   
+    /* transition: all 0.3s ease; */
+}
+
+header .line li {
+    font-family: var(--font-Mukta);
+    font-size: 40px;
+    font-weight: 275;
+    margin-top: 11px;
+}
+
+header .line li.on {
+    font-family: var(--font-Mukta);
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-top: 0px;
+
+}
+
+
+
+header .line li a {
+    margin-right: 58px;
+}
+
+
+footer {
+    width: 100%;
+    height: 320px;
+    background-color: var(--main-color);
+
+    display: flex;
+
+}
+
+footer .inner {
+    display: flex;
+}
+
+.footer_section {
+    flex: 1;
+    text-align: center;
+}
+
+footer .left {
+    text-align: left;
+    align-self: flex-end;
+    margin-bottom: 54px;
+}
+
+footer .left p {
+    color: var(--main-gray);
+    font-family: var(--main-font);
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+footer .left ul {
+    display: flex;
+}
+footer .left ul li{
+    margin-right: 10px;
+}
+footer .left ul li a {
+    color: var(--main-gray);
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+footer .center{
+    color: var(--main-gray);
+    font-family: var(--main-font);
+font-size: 41px;
+font-weight: 400;
+letter-spacing: -0.82px;
+
+justify-content: center;
+align-content: center;
+}
+
+footer .center img{
+    width: 72px;
+    height: 78px;
+}
+
+footer .right {
+    text-align: right;
+    align-self: flex-end;
+    margin-bottom: 54px;
+}
+
+footer .right p {
+    color: var(--main-gray);
+    font-family: var(--main-font);
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+footer .right em {
+    color: var(--main-gray);
+    font-family: var(--main-font);
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
