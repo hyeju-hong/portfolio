@@ -906,15 +906,30 @@
 
 }
 
-.sticky_con ul li>.back h3 {
+.sticky_con ul li>.back h3.fir {
     color: #FFDB2C;
     text-align: center;
     font-family: var(--main-font);
     font-size: 90px;
-    /* font-weight: 700; */
+    font-weight: 500;
 
 }
+.sticky_con ul li>.back h3.sec {
+    color: #fefefe;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 90px;
+    font-weight: 500;
 
+}
+.sticky_con ul li>.back h3.thir {
+    color: #FD0003;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 90px;
+    font-weight: 500;
+
+}
 .sticky_con ul li>.back p {
     color: #FFF;
 
@@ -923,7 +938,7 @@
 
     font-size: 26px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 37px;
 }
 
@@ -935,7 +950,7 @@
     line-height: 37px;
     font-size: 26px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
