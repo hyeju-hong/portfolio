@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="온라인을 통해 미술 작품을 사고팔 수 있는 경매 플랫폼">
+    <meta name="keywords" content="art, auction">
+    <meta name="author" content="Hong hyeju">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>art auction</title>
+    <!-- swiper js 연결한거임  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/bc63ce3cb9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+
+<body>
+    <div class="green"></div>
+    <header>
+
+        <div class="inner">
+            <h1><a href="#"><img src="./img/logo.png" alt="artauction"></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li class="on"><a href="#">Auction</a></li>
+                    <li><a href="#">Best</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Company</a></li>
+                </ul><!-- gnb -->
+                <ul class="sub">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul><!-- sub -->
+            </nav>
+        </div><!-- inner -->
+
+    </header>
+    <main>
+        <section class="swiper main_visual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide main1"></div>
+                <div class="swiper-slide main2"></div>
+                <div class="swiper-slide main3"></div>
+                <div class="swiper-slide main4"></div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+
+            <div class="inner">
+                <div class="main_tit">
+                    <img class="txt" src="img/main_txt.png" alt="artauction">
+                    <!-- <p class="art">ART</p>
+                    <p class="auction">AUCTION</p> -->
+                </div>
+                <div class="sub_tit">
+                    <h4>새로운 경매 작품들을</h4>
+                    <h3>‘한 눈에’</h3>
+                    <a href="#">경매 결과 확인하기</a>
+                </div>
+            </div>
+        </section><!-- main_visual -->
+
+
+        <section class="now">
+
+            <div class="now_top">
+                <div class="now_txt" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine " data-aos-duration="3000">
+                    <div class="top_txt" >
+                        <h3>진행 중<h4>인</h4>
+                        </h3>
+
+                    </div>
+                    <div class="bottom_txt">
+                        <h3>경매</h3>
+                        <h4>에 </h4>
+                        <h3>참여</h3>
+                        <h4>하세요</h4>
+
+                    </div>
+                </div><!-- now_txt -->
+                <div class="arrow_button" class="now_txt" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine " data-aos-duration="3000">
+                    <a href="#"><img src="img/btn.png" alt="button"></a>
+                </div><!-- arrow_button -->
+            </div><!-- now_top -->
+
+            <div class="now_bottom" >
+                <img class="tree"  data-aos="zoom-in-right" data-aos-duration="13000" src="img/tree.jpg" alt="tree">
+                <img class="green" data-aos="zoom-in"  data-aos-duration="5000" src="img/green.jpg" alt="green">
+                <img class="redhair"  data-aos="zoom-in-left" data-aos-duration="18000" src="img/redhair.jpg" alt="redhair">
+                <img class="woman"  data-aos="zoom-out-up" data-aos-duration="21000" src="img/woman.jpg" alt="woman">
+
+
+            </div><!-- now_bottom -->
+
+        </section><!-- now -->
+        <section class="result">
+            <div class="inner"  data-aos="fade-up" data-aos-duration="3000">
+                <p>winning</p>
+                <div class="result_container">
+                    <div class="result_three">
+                        <div class="result_card">
+                            <span class="price">59,000</span>
+                            <img class="one" src="./img/mount.jpg" alt="mount">
+                            <div class="re_txt">
+                                <h3>kim-sang jin</h3>
+                                <p>ID: sangjin</p>
+                                <p>Auction : Mountain</p>
+                            </div><!-- re_txt -->
+                        </div><!-- result_card -->
+
+                        <div class="result_card">
+                            <span class="price">85,000</span>
+                            <img class="two" src="./img/monk.jpg" alt="monk">
+                            <div class="re_txt">
+                                <h3>Kim-ju young</h3>
+                                <p>ID: juyoung0224</p>
+                                <p>Auction : Monk</p>
+                            </div>
+                        </div><!-- result_card -->
+
+                        <div class="result_card">
+                            <span class="price">44,000</span>
+                            <img class="three" src="./img/hand.jpg" alt="hand">
+                            <div class="re_txt">
+                                <h3>Sin-jae ho</h3>
+                                <p>ID: jaejae</p>
+                                <p>Auction : Hand</p>
+                            </div>
+                        </div><!-- result_card -->
+                    </div><!-- result_three -->
+
+
+                    <div class="result_three">
+                        <div class="result_card">
+                            <span class="price">103,000</span>
+                            <img class="four" src="./img/redtree.jpg" alt="redtree">
+                            <div class="re_txt">
+                                <h3>Im-ji won</h3>
+                                <p>ID: jiwon123</p>
+                                <p>Auction : Tree</p>
+                            </div>
+                        </div><!-- result_card -->
+
+                        <div class="result_card">
+                            <span class="price">66,000</span>
+                            <img class="five" src="./img/ballon.jpg" alt="ballon">
+                            <div class="re_txt">
+                                <h3>Park-woo jin</h3>
+                                <p>ID: woojin1111</p>
+                                <p>Auction : Ballon</p>
+                            </div>
+                        </div><!-- result_card -->
+
+                        <div class="result_card">
+                            <span class="price">91,000</span>
+                            <img class="six" src="./img/lamp.jpg" alt="lamp">
+                            <div class="re_txt">
+                                <h3>Han-hye ji</h3>
+                                <p>ID: hyejihan</p>
+                                <p>Auction : Stand</p>
+                            </div>
+                        </div><!-- result_card -->
+                    </div><!-- result_three -->
+
+                </div><!-- result_container -->
+            </div><!-- inner -->
+        </section><!-- result -->
+        <section class="new " >
+            <div class="inner " data-aos="zoom-in" data-aos-duration="2000" >
+                <div class="new_txt">
+                    <div class="new_top" >
+                        <h4>NEW 작품</h4>
+                        <p>오늘의 경매 작품을 확인하세요</p>
+                    </div><!-- new_top -->
+                    <div class="new_bottom">
+                        <h3>TODAY</h3>
+                        <h2  >NEW</h2>
+                        <h3>AUCTION</h3>
+                    </div><!-- new_bottom -->
+                </div><!-- new_txt -->
+                <img   src="./img/face.jpg" alt="face">
+            </div><!-- inner -->
+        </section><!-- new -->
+
+
+        <section class="coming">
+            <div class="inner" >
+                <div class="head_txt" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="top_txts">
+                        <h3>경매 예정작</h3>
+                        <p>들을 미리 만나볼 수 있는 기회</p>
+                    </div><!-- top_txts -->
+                    <h2>COMING SOON</h2>
+                </div><!-- head_txt -->
+                <div class="pic_txt">
+                    <div class="red"  data-aos="flip-left" data-aos-duration="3000">
+                        <img src="./img/redface.jpg" alt="redface">
+                        <p>03/06</p>
+                        <div class="hover_back" >
+                            <h3>거인의 초상화</h3>
+                            <h4>Hyeju</h4>
+
+                        </div>
+                    </div>
+                    <div class="purple" data-aos="flip-right" data-aos-duration="3000">
+                        <img src="./img/colorsky.jpg" alt="colorsky">
+                        <p>03/09</p>
+                        <div class="hover_back">
+                            <h3>Festival</h3>
+                            <h4>Hyeju</h4>
+
+                        </div>
+                    </div>
+                    <div class="sky"  data-aos="flip-left" data-aos-duration="3000">
+                        <img src="./img/redground.jpg" alt="redground">
+                        <p>03/11</p>
+                        <div class="hover_back">
+                            <h3>Burning ground</h3>
+                            <h4>Hyeju</h4>
+
+                        </div>
+                    </div>
+                    <div class="pink" data-aos="flip-right" data-aos-duration="3000">
+                        <img src="./img/whiteflower.jpg" alt="whiteflower">
+                        <p>03/11</p>
+                        <div class="hover_back">
+                            <h3>White Lily</h3>
+                            <h4>Hyeju</h4>
+
+                        </div>
+                    </div>
+                    <div class="orange" data-aos="flip-left" data-aos-duration="3000">
+                        <img src="./img/flowers2.jpg" alt="flowers">
+                        <p>03/14</p>
+                        <div class="hover_back">
+                            <h3>Green Flowers</h3>
+                            <h4>Hyeju</h4>
+
+                        </div>
+                    </div>
+                </div><!-- pic_txt -->
+            </div><!-- inner -->
+        </section><!-- coming -->
+
+
+
+        <section class="artist">
+            <div class="back_white" data-aos="zoom-out-up" data-aos-duration="2000"></div><!-- back_white -->
+            <div class="inner" >
+                <div class="main_txt" data-aos="zoom-out-up" data-aos-duration="2000">
+                    <div class="main_top_txt">New Artist</div>
+                    <div class="main_bottom_txt">
+                        <div class="fir_txt">
+                            <h4>새로운 작가</h4>
+                            <p>를 </p>
+                            <h4>모집</h4>
+                            <p>합니다. 창의적인 당신의 작품을 보여주세요.</p>
+                        </div><!-- fir_txt -->
+
+                        <div class="sec_txt">
+                            <p>수채화부터 유화, 파스텔화까지 한계없이 보여주는 작품의 세계!</p>
+                        </div><!-- sec_txt -->
+
+                        <div class="third_txt">
+                            <p>여러분들이 만들어낸 </p>
+                            <h4>작품</h4>
+                            <p>을 </p>
+                            <h4>경매</h4>
+                            <p>합니다.</p>
+                        </div>
+                    </div><!-- main_bottom_txt -->
+                </div><!-- main_txt -->
+
+                <div class="artist_pic" >
+                    <img src="img/facefra.jpg" alt="faceframe">
+                </div><!-- artist_pic -->
+
+                <div class="sub_txt" data-aos="fade-left" data-aos-duration="3000">
+                    <h4><a href="#">APPLY FOR</a></h4>
+                    <h3></h3>
+                    <p>소중히 보관해왔던 작품들을 경매에 소개해보세요<br>
+                        그림을 그리며 느꼈던 순간들과 감정들을 함께 공유하고<br>
+                        작품의 가치를 알아봐주는 사람들과 교류할 수 있는 공간<br>
+                        작가가 되어 작품을 등록한다면 경매와 입찰까지<br>
+                        모든 걸 함께해드립니다.</p>
+                </div><!-- sub_txt -->
+            </div><!-- inner -->
+            <a href="#"><img class="arrow_up" src="img/arrow-up-circle.png" alt="arrowup"></a>
+
+        </section><!-- artist -->
+        <footer>
+            <div class="sns">
+                <ul>
+                    <li class="insta"><a href="#">INSTAGRAM<img src="img/insta2.png" alt="instagram"></a></li>
+                    <li class="facebook"><a href="#">FACE BOOK<img src="img/facebook2.png" alt="facebook"></a></li>
+                    <li class="x"><a href="#">X (twitter)<img src="img/xtwitter2.png" alt="twitter"></a></li>
+                </ul>
+            </div><!-- sns -->
+            <div class="info">
+                <ul>
+                    <li><a href="#">개인정보처리방식</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">운영방침</a></li>
+                </ul>
+            </div><!-- info -->
+            <div class="company">
+                <ul>
+                    <li>
+                        <p>대표이사 : 홍혜주</p>
+                    </li>
+                    <li>
+                        <p>서울 서초구 서초대로 77길 41, 대동 2빌딩 9층</p>
+                    </li>
+                    <li>
+                        <p>T : 02-1000-10000</p>
+                    </li>
+                    <li>
+                        <p>사업자 등록번호 : 100-12-34567</p>
+                    </li>
+                </ul>
+            </div><!-- company -->
+        </footer>
+    </main>
+
+
+
+
+
+
+
+    <script>
+        let mainSlide = new Swiper(".main_visual", {
+            autoplay: {
+                delay: 2500,
+            },
+            effect: 'fade',
+            loop: true,
+            pagination: {
+                el: ".main_visual .swiper-pagination",
+                clickable: true,
+            },
+
+        });
+    </script>
+</body>
+
+</html>

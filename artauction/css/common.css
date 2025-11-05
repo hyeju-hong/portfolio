@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Montserrat+Subrayada:wght@400;700&family=Quattrocento:wght@400;700&family=Quicksand:wght@300..700&family=Radley:ital@0;1&family=Readex+Pro:wght@160..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Sahitya:wght@400;700&family=Shanti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 
+  font-family: "Quicksand", sans-serif;
+    font-family: "Radley", serif;
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-family: "Readex Pro", sans-serif;
+   font-family: "Red Hat Text", sans-serif;
+    font-family: "Shanti", sans-serif;
+    font-family: "Sahitya", serif;
+     font-family: "Quattrocento", serif;
+     font-family: "Alkatra", system-ui;
+     font-family: "Noto Sans KR", sans-serif;
+*/
+
+
+:root {
+    --main-color: #721010;
+    --main-button: #B51A1A;
+    --main-green: #00695E;
+    --back-red: #310101;
+    --main-red-w: #C2171A;
+    --main-winning-line: #531A1A;
+    --main-sub-red: #721010;
+    --main-gray: #E1E1E1;
+    --main-opacity-gray: #E0E7E6;
+    --price-red: #5A1E1E;
+    --button-red: #A23929;
+    --button-purple: #604257;
+    --button-blue: #123E54;
+    --button-pink: #C44D7F;
+    --button-orange: #EC5200;
+    --w-color: #fff;
+    --main-stroke: #DEDEDE;
+    --main-stroke-r: #721010;
+    --main-footer: #673535;
+    --main-font: "Quicksand", sans-serif;
+    --radley-font: "Radley", serif;
+    --Montserrat-font: "Montserrat Subrayada", sans-serif;
+    --Readex_Pro-font: "Readex Pro", sans-serif;
+    --Red_Hat-font: "Red Hat Text", sans-serif;
+    --Shanti-font: "Shanti", sans-serif;
+    --Sahitya-font: "Sahitya", serif;
+    --Quattrocento-font: "Quattrocento", serif;
+    --Alkatra-font: "Alkatra", system-ui;
+    --noto_sansKR-font: "Noto Sans KR", sans-serif;
+}
+
+
+body {
+    font-family: "Quicksand", "Radley", "Montserrat Subrayada", "Readex Pro", "Red Hat Text", "Shanti", "Sahitya", "Quattrocento", "Alkatra", "Noto Sans KR";
+}
+
+
+.inner {
+    width: 1340px;
+    margin: 0 auto;
+    /* height: 149px; */
+    /* background-color: #C44D7F; */
+    /* display: flex; */
+    /* align-items: center; */
+
+}
+
+.green {
+    width: 100%;
+    height: 6px;
+    background-color: var(--main-green);
+
+
+}
+
+header {
+    height: 140px;
+    /* background-color: palegoldenrod; */
+    display: flex;
+
+
+}
+
+header .inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header .inner h1 {
+    width: 150px;
+    float: left;
+}
+
+header .inner h1 a {
+    /* display: block;  */
+    /* a링크는 본인 만큼만 먹기때문에 블럭 만들어줘야 사용자가 클릭하기 편하다. */
+    /* width: 100%;
+    height: 150px; */
+    /* background: teal; */
+    /* box-sizing: border-box;
+    padding-top: 30px; */
+
+}
+
+header .inner nav {
+
+    display: flex;
+    gap: 60px;
+
+}
+
+header .inner nav ul.gnb {
+
+    display: flex;
+    gap: 20px;
+}
+
+header .inner nav ul>li {}
+
+header .inner nav ul.gnb>li {
+    display: flex;
+    width: 190px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    font-family: var(--noto_sansKR-font);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    /* 폰트 사이즈 원래보다 2px키움 */
+
+}
+
+header .inner nav ul.gnb>li.on {
+    width: 190px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    background: #00695E;
+    border-radius: 30px;
+    border: 1px solid #DEDEDE;
+    color: var(--w-color);
+    font-family: var(--noto_sansKR-font);
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+header .inner nav ul.gnb>li>a {
+    /* display: flex;
+    display: block;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; */
+
+
+}
+
+header .inner nav>ul.sub {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+
+header .inner nav ul.sub>li {
+
+    display: flex;
+    width: 120px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #DEDEDE;
+
+    background: #FFF;
+
+
+}
+
+header .inner nav ul.sub>li>a {
+    display: flex;
+    color: var(--main-green);
+}
+
+footer {
+    height: 200px;
+    background-color: var(--main-footer);
+
+}
+
+
+
+.sns ul {
+
+
+    display: flex;
+    /* 한 줄로 배열 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    height: 70px;
+    
+
+}
+
+.sns li {
+    display: flex;
+    /* 리스트 아이템 내의 내용들 나란히 배치 */
+    align-items: center;
+    /* 이미지와 텍스트가 세로로 중앙 정렬 */
+    margin: 0 20px;
+    /* 아이템 간 간격 조정 */
+}
+
+.sns a {
+    display: flex;
+    /* 이미지와 텍스트를 나란히 배치 */
+    align-items: center;
+    /* 세로 정렬 */
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
+    color: var(--w-color);
+    /* 텍스트 색상 */
+    /* font-size: 30px; */
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.sns img {
+    width: 40px;
+    /* 이미지 크기 조정 */
+
+    margin-left: 10px;
+    /* 이미지와 텍스트 간 간격 */
+}
+
+
+.info ul {
+
+    display: flex;
+    /* 한 줄로 배열 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    height: 80px;
+    
+}
+
+.info li {
+    margin: 0 15px;
+    /* 아이템 간 간격 조정 */
+    border-right: 1px solid #fff;
+}
+
+.info a {
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
+
+    color: var(--w-color);
+
+    text-align: center;
+    font-family: var(--Alkatra-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 30px;
+}
+
+.info li:last-child {
+    border-right: none;
+}
+
+.company ul {
+
+    display: flex;
+    /* 한 줄로 배열 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    height: 10px;
+    
+}
+
+.company li {
+    margin: 0 20px;
+    /* 아이템 간 간격 조정 */
+    /* border-right: 1px solid #fff; */
+
+
+}
+
+.company p {
+    margin: 0;
+    /* p 태그의 기본 마진 제거 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+
+    color: var(--w-color);
+
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin-right: 30px; */
+
+}
+
