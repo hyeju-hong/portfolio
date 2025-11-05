@@ -1,0 +1,237 @@
+.home {
+  padding: 2rem;
+  background-color: #000511;
+  width: calc(100% - 15%);
+  margin-left: 15%;
+  box-sizing: border-box;
+}
+
+.featured_section,
+.recent_section {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.featured_section h2,
+.recent_section h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-family: "nexon_medium";
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.gallery_column {
+  padding: 0 12px;
+  background-clip: padding-box;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card_content {
+  padding: 20px;
+}
+
+.card_title {
+  font-family: "nexon_medium";
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.card_description {
+  font-size: 14px;
+  font-family: "nexon_regular";
+  font-weight: normal;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_stats {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  color: #888;
+}
+
+.card_stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.more_btn {
+  background: #e3ff7d;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.more_btn:hover {
+  transform: scale(1.05);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.loading_spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6eff51;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .featured_section h2,
+  .recent_section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+  .home {
+    padding: 0.5rem;
+  }
+
+  .featured_section h2,
+  .recent_section h2 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .gallery_column {
+    padding: 0 5px;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .card_content {
+    padding: 10px;
+  }
+
+  .card_title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .card_description {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .card_footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .card_stats {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .more_btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+
+/* 챗봇 아이콘 스타일 */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #6eff51; /* 초록색 배경 */
+  color: #000511; /* 어두운 글씨 */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.chatbot-icon:hover {
+  background-color: #57d941; /* 호버 시 색상 변경 */
+  transform: scale(1.1); /* 호버 시 약간 커짐 */
+}
+
+.chatbot-icon.open {
+  background-color: #ff4d4d; /* 열림 상태일 때 배경색 (예: 빨간색) */
+}
+
+.chatbot-icon.open:hover {
+  background-color: #ff3333; /* 열림 상태 호버 시 색상 변경 */
+} 

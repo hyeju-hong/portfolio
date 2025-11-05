@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/* 메인 콘텐츠 */
+.heart_container {
+  width: calc(100% - 15%);
+  margin-left: 15%;
+  background-color: #000511;
+  min-height: 100vh;
+}
+
+.heart_top_header {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../assets/img/heart_header_bg") lightgray 50% / cover no-repeat;
+  background-position: 40% 20%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 80px;
+  margin: 0;
+}
+
+.heart_top_header h2 {
+  font-family: "football_700";
+  font-weight: normal;
+  font-size: 40px;
+  color: var(--white-color);
+  margin-bottom: 30px;
+}
+
+.heart_tag_box_wrap {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.heart_main {
+  padding: 40px 80px;
+  background-color: #000511;
+  min-height: calc(100vh - 250px);
+  width: 100%;
+}
+
+.heart_section {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.heart_card_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.heart_card {
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.heart_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(110, 255, 81, 0.2);
+  border-color: #6eff51;
+}
+
+.heart_card_image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.heart_card_image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-size: cover;
+  transition: transform 0.8s ease;
+  z-index: 1;
+}
+
+.heart_card:hover .heart_card_image::before {
+  transform: scale(1.08);
+}
+
+.heart_card_content {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+  background-color: #000511;
+}
+
+.heart_card_title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "nexon_medium";
+}
+
+.heart_card_author {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 12px;
+}
+
+.heart_author_avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 8px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1400px) {
+  .heart_card_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .heart_card_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heart_container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .heart_top_header {
+    padding: 20px;
+    height: auto;
+  }
+
+  .heart_main {
+    padding: 20px;
+  }
+
+  .heart_top_header h2 {
+    font-size: 30px;
+  }
+
+  .heart_tag_box_wrap {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .heart_card_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+  .heart_container {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  .heart_top_header {
+    height: 120px !important;
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+
+  .heart_top_header h2 {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .heart_tag_box_wrap {
+    display: flex !important;
+    gap: 8px !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    padding-bottom: 10px !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .heart_tag_box_wrap::-webkit-scrollbar {
+    display: none;
+  }
+
+  .heart_tag_box_wrap .tag_box {
+    height: 30px !important;
+    font-size: 14px !important;
+    padding: 0 15px !important;
+    min-width: fit-content !important;
+  }
+
+  .heart_main {
+    padding: 15px !important;
+  }
+
+  .heart_section {
+    margin-bottom: 60px;
+  }
+
+  .heart_card_grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .heart_card_image {
+    height: 200px !important;
+  }
+
+  .heart_card_content {
+    padding: 10px !important;
+  }
+
+  .heart_card_title {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .heart_card_author {
+    font-size: 10px !important;
+  }
+
+  .heart_author_avatar {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 5px !important;
+  }
+} 

@@ -1,0 +1,36 @@
+.mypage_container .top_header {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../assets/img/mypage_header_bg.jpg") lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.mypage_container .top_header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.mypage_container .top_header h2,
+.mypage_container .top_header .tag_box_wrap {
+  position: relative;
+  z-index: 2;
+} 

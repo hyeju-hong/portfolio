@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+/* 메인 콘텐츠 */
+.fiction_container {
+  width: calc(100% - 15%);
+  margin-left: 15%;
+  background-color: #000511;
+  min-height: 100vh;
+}
+
+.fiction_container .top_header {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../assets/img/fiction_header_bg.jpg") lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 80px;
+  margin-bottom: 40px;
+}
+
+.top_header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top_header h2,
+.top_header .tag_box_wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.fiction_container .top_header h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'football_700';
+  font-weight: bold;
+  text-align: left;
+}
+
+.fiction_container .top_header .tag_box_wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tag_box {
+  display: inline-flex;
+  min-width: fit-content;
+  height: 50px;
+  border-radius: 200px;
+  border: 1px solid #6eff51;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-family: "football_300", Arial, sans-serif;
+  font-weight: normal;
+  padding: 0 30px;
+}
+
+.tag_box:hover {
+  background-color: #6eff51;
+  color: #000511;
+  transform: translateY(-2px);
+}
+
+.main {
+  padding: 30px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section_title {
+  font-size: 24px;
+  color: white;
+  font-family: "nexon_medium";
+}
+
+.more_button {
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.more_button:hover {
+  color: white;
+}
+
+.ranking_sub {
+  font-size: 20px;
+  font-family: "nexon_light";
+  font-weight: 300;
+  color: white;
+}
+
+.fiction_ranking_main {
+  font-size: 30px;
+  font-family: "nexon_medium";
+  font-weight: 500;
+  color: white;
+}
+
+.ranking_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.fiction_card_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.fiction_card_grid.daily {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card_grid.tags {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  border: none; /* Ensure no border on the card itself */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card_image {
+  width: 30%;
+  height: 250px;
+  background: url('../assets/img/test4.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: none; /* Ensure no border */
+  border-radius: 10px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_content {
+  padding: 15px;
+  background-color: #000511;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: "nexon_medium", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.card_description {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card_tag {
+  color: #6eff51;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card_author {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.author_avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url('../assets/img/test_profile.jpg') no-repeat center center;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.card_grid.tags .card.tag_card {
+  flex: 1;
+  height: 150px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card_grid.tags .card.tag_card.tag-maple {
+  background-image: url('../assets/img/tag_maple.jpg');
+}
+
+.card_grid.tags .card.tag_card.tag-lol {
+  background-image: url('../assets/img/tag_lol.jpg');
+}
+
+.card_grid.tags .card.tag_card.tag-overwatch {
+  background-image: url('../assets/img/tag_overwatch.jfif');
+}
+
+.card_grid.tags .card.tag_card.tag-dungeon {
+  background-image: url('../assets/img/tag_dungeon.jpg');
+}
+
+.card_grid.tags .card.tag_card.tag-mabi {
+  background-image: url('../assets/img/tag_mabi.jpg');
+}
+
+.tag_card_title_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.card_grid.tags .card.tag_card .tag_card_title {
+  position: static;
+  bottom: auto;
+  left: auto;
+  font-size: 16px;
+  font-family: "football_300", Arial, sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.tag_card_title {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 16px;
+  font-family: "football_300", Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1400px) {
+  .fiction_card_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .fiction_card_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .fiction_container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .top_header {
+    padding: 20px 30px;
+  }
+
+  .main {
+    padding: 20px 30px;
+  }
+
+  .top_header h2 {
+    font-size: 30px;
+  }
+
+  .section_title {
+    font-size: 20px;
+  }
+
+  .fiction_ranking_main {
+    font-size: 20px;
+  }
+
+  .ranking_sub {
+    font-size: 16px;
+  }
+
+  .tag_box_wrap {
+    gap: 8px;
+  }
+
+  .tag_box {
+    height: 40px;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card_image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card_grid.tags {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card_grid.tags .card.tag_card {
+    height: 120px;
+    padding: 10px;
+  }
+
+  .section {
+    margin-bottom: 80px;
+  }
+  
+  .section:nth-child(2),
+  .section:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+  .fiction_container .top_header {
+    height: 120px !important;
+    padding: 0 10px !important;
+    margin-bottom: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .top_header h2 {
+    font-size: 1.2rem !important;
+    margin-bottom: 6px !important;
+    font-family: 'football_700', sans-serif !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    text-align: left !important;
+  }
+  .tag_box_wrap {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    white-space: nowrap !important;
+    scrollbar-width: none;
+  }
+  .tag_box_wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .tag_box {
+    display: inline-flex !important;
+    min-width: fit-content !important;
+    height: 32px !important;
+    border-radius: 200px !important;
+    border: 1px solid #6eff51 !important;
+    color: #fff !important;
+    font-size: 0.9rem !important;
+    font-family: 'football_300', Arial, sans-serif !important;
+    font-weight: normal !important;
+    padding: 0 16px !important;
+    background: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+  }
+}

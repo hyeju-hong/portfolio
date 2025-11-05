@@ -1,0 +1,71 @@
+.footer {
+    border-top: 1px solid #888;
+    background-color: #000511;
+    color: #888;
+    padding: 40px 80px;
+    /* padding-left: calc(15% + 80px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_logo {
+    font-family: "football_700";
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer_links {
+  margin-bottom: 15px;
+}
+
+.footer_links a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+    color: white;
+}
+
+.footer_social a {
+    color: #888;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer_social a:hover {
+    color: white;
+}
+
+.footer_contact {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer_copyright p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+} 

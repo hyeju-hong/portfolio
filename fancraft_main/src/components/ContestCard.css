@@ -1,0 +1,57 @@
+.contest_card {
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #000511;
+  transition: transform 0.3s ease;
+}
+
+.contest_card:hover {
+  border: 1px solid #6eff51;
+  transform: translateY(-5px);
+}
+
+.contest_card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contest_image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.contest_content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contest_title {
+  color: white;
+  font-size: 18px;
+  font-family: "nexon_medium";
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.contest_author {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 12px;
+}
+
+.author_avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 8px;
+}
