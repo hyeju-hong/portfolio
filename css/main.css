@@ -1022,14 +1022,15 @@
 }
 
 .contact .contact_right .right_bottom h3 {
-    color: #000;
+    color: #5C0238;
 
     font-family: var(--main-font);
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 44px;
+    font-weight: 460;
 
 }
 
 .contact .contact_right .right_bottom h3 a span {
-    font-size: 38px;
+    font-size: 80px;
+    font-weight: 400;
 }
