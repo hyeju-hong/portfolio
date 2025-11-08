@@ -66,7 +66,7 @@ $(function () {
     ScrollTrigger.create({
         trigger: ".con2_all",
         start: "top top",
-        markers: true,
+        // markers: true,
         
         end: () => `+=${items.length * 200}`,
         scrub: true,
