@@ -65,9 +65,9 @@ $(function () {
     // ✅ ScrollTrigger 고정 설정
     ScrollTrigger.create({
         trigger: ".con2_all",
-        start: "top top+=90",
-        // markers: true,
-
+        start: "top top",
+        markers: true,
+        
         end: () => `+=${items.length * 200}`,
         scrub: true,
         pin: true,
@@ -84,6 +84,7 @@ $(function () {
         onEnterBack: () => {
             activateByIndex(0);
         }
+        
     });
 
     // ✅ 버튼 클릭 시 on 이동 + 스크롤 이동
