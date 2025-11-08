@@ -65,7 +65,7 @@ $(function () {
     // ✅ ScrollTrigger 고정 설정
     ScrollTrigger.create({
         trigger: ".con2_all",
-        start: "top top",
+        start: "top top+=90",
         // markers: true,
 
         end: () => `+=${items.length * 200}`,
