@@ -59,8 +59,12 @@ ul {
 }
 
 .inner {
-    width: 1672px;
+    /*width: 1672px;*/
+    width: 100%;
+    max-width: 1672px;
     margin: 0 auto;
+    /* padding: 0 40px; */
+    box-sizing: border-box;
 }
 
 header {
