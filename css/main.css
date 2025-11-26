@@ -682,11 +682,11 @@
      white-space: nowrap;
 }
 
-.txtAniBox .simply-scroll:nth-child(1) {
+/* .txtAniBox .simply-scroll:nth-child(1) {
     color: #E6E6E6;
 
 
-}
+} */
 
 /* .txtAniBox .simply-scroll .simply-scroll-list {
     display: flex;
@@ -705,8 +705,10 @@
     /* 줄바꿈 안한다 */
     transform-origin: left top;
     justify-content: center;
- display: inline-flex;
-     will-change: transform;
+ display: block;
+     /* will-change: transform; */
+
+     
 }
 
 
@@ -714,8 +716,11 @@
 
 .value .txtAniBox ul li {
     margin-right: 50px;
-
+    
      display: inline-block;
+      line-height: 70px; 
+       position: relative;
+    top: -10px;
 }
 
 .value .txtAniBox ul.txtAni1{

@@ -235,18 +235,18 @@ $(function () {
 
 
     //value
-    $('.txtAniBox .txtAni1').simplyScroll({
-        speed: 4,
-        pauseOnHover: true,
-        pauseOnTouch: false,
-        direction: 'forwards',
-    });
-    $('.txtAniBox .txtAni2').simplyScroll({
-        speed: 4,
-        pauseOnHover: true,
-        pauseOnTouch: false,
-        direction: 'backwards',
-    });
+    // $('.txtAniBox .txtAni1').simplyScroll({
+    //     speed: 4,
+    //     pauseOnHover: true,
+    //     pauseOnTouch: false,
+    //     direction: 'forwards',
+    // });
+    // $('.txtAniBox .txtAni2').simplyScroll({
+    //     speed: 4,
+    //     pauseOnHover: true,
+    //     pauseOnTouch: false,
+    //     direction: 'backwards',
+    // });
 
 
     //point_cards
