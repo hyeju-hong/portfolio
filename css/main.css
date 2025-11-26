@@ -658,6 +658,10 @@
 
 
 /* value */
+
+
+
+
 .value {
     width: 100%;
     height: 1080px;
@@ -675,6 +679,7 @@
     font-weight: 400;
     overflow: hidden;
 
+     white-space: nowrap;
 }
 
 .txtAniBox .simply-scroll:nth-child(1) {
@@ -703,8 +708,14 @@
 
 }
 
+.value .txtAniBox ul.txtAni2{
+     animation: scrollRight 18s linear infinite;
+}
+
 .value .txtAniBox ul li {
     margin-right: 50px;
+
+     display: inline-block;
 }
 
 .value .value_img {
