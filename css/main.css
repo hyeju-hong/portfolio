@@ -688,34 +688,52 @@
 
 }
 
-.txtAniBox .simply-scroll .simply-scroll-list {
+/* .txtAniBox .simply-scroll .simply-scroll-list {
     display: flex;
 }
 
 .txtAniBox .simply-scroll .simply-scroll-clip {
 
     overflow: hidden;
-}
+} */
 
 .value .txtAniBox ul {
-    display: flex;
+    /* display: flex; */
     height: 70px;
     align-items: center;
     white-space: nowrap;
     /* 줄바꿈 안한다 */
     transform-origin: left top;
     justify-content: center;
-
+ display: inline-flex;
+     will-change: transform;
 }
 
-.value .txtAniBox ul.txtAni2{
-     animation: scrollRight 18s linear infinite;
-}
+
+
 
 .value .txtAniBox ul li {
     margin-right: 50px;
 
      display: inline-block;
+}
+
+.value .txtAniBox ul.txtAni1{
+       animation: scrollLeft 40s linear infinite;
+
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.value .txtAniBox ul.txtAni2{
+     animation: scrollRight 40s linear infinite;
+}
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
 
 .value .value_img {
